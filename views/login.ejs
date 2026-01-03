@@ -1,0 +1,57 @@
+
+<body>
+    <div class="form-wrapper">
+        <main class="form-side">
+            <a href="#" title="Logo">
+            </a>
+            <form class="my-form"  method="POST" action="/users/login">
+                <div class="form-welcome-row">
+                    <h1>Welcome back 👏</h1>
+                    <h2>Rest-API Hosei</h2>
+                </div>
+                <div class="divider">
+                    <div class="divider-line"></div>
+					
+					<img src="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg" alt="Hosei" width="50">
+                    <div class="divider-line"></div>
+                </div>
+                <div class="text-field">
+                    <label for="identifier">Username Atau Email</label>
+                    <input type="text" id="identifier" name="identifier" autocomplete="off" placeholder="xxxxxxxxxxx"
+                        required>
+                </div>
+                <div class="text-field d-flex justify-content-between">
+    <label for="password">Kata Sandi</label> 
+    <input id="password" type="password" name="password" placeholder="********" required>
+    <a href="/users/forgotpassword" class="text-muted"><small>Forgot your password?</small></a>
+</div>
+				
+                <button type="submit" class="my-form__button">
+                   Login
+                </button>
+                <div class="my-form__actions">
+                    <div class="my-form__row">
+                        <span>Tidak memiliki akun? </span>
+                        <a href="/users/register" title="Reset Password">
+						Klik Disini
+                        </a>
+                    </div>
+					
+                </div>
+            </form>
+        </main>
+        <aside class="info-side">
+			<div class="blockquote-wrapper">
+				<blockquote id="quote"></blockquote>
+				<div class="author">
+					<img img id="waifuImage" alt="Waifu Image">
+					<span class="author-name" id="character"></span>
+				</div>
+			</div>
+            </div>
+        </aside>
+    </div>
+</body>
+
+<%- include('layouts/errors2') %>
+<%- include('layouts/msg2') %>

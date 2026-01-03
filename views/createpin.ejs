@@ -1,0 +1,33 @@
+<!-- views/create-pin.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create PIN</title>
+</head>
+<body>
+
+  <h1>Create PIN</h1>
+
+  <% if (error_msg) { %>
+    <p style="color: red;"><%= error_msg %></p>
+  <% } %>
+
+  <% if (success_msg) { %>
+    <p style="color: green;"><%= success_msg %></p>
+  <% } %>
+
+  <form action="/create-pin" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="pin">PIN:</label>
+    <input type="text" id="pin" name="pin" required>
+    <br>
+    <button type="submit">Create PIN</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+# Dependensi
+node_modules/
+
+# File log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Direktori build
+/dist
+/build
+
+# File environment
+.env
+
+# File sistem operasi
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo

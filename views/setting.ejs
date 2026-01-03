@@ -1,0 +1,50 @@
+
+<div class="loader-bg">
+	<div class="loadingio-spinner-typing-xprgxbsyl4">
+		<div class="ldio-b5rzs5omc1l">
+			<div style="left:30.150000000000002px;background:#ffffff;animation-delay:-0.37499999999999994s;"></div>
+			<div style="left:50.25px;background:#ffffff;animation-delay:-0.28124999999999994s;"></div>
+			<div style="left:70.35000000000001px;background:#ffffff;animation-delay:-0.18749999999999997s;"></div>
+			<div style="left:90.45px;background:#ffffff;animation-delay:-0.09374999999999999s;"></div>
+		</div>
+	</div>
+</div>
+<!-- [ Pre-loader ] End -->
+<div class="auth-main">
+	<div class="auth-wrapper v1">
+<div class="auth-form">
+	<div class="card my-5">
+		<div class="card-body">
+			<div class="text-center">
+				<a href="/" class="fs-3 hero-text-gradient fw-bolder">
+					<img src="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg" width="60"><br>
+					Hosei APIs                   </a>
+			</div>
+			<div class="saprator my-3">
+				<span>Settings</span>
+			</div>
+			<h5 class="text-center text-muted f-w-500 mb-3">👋 Silahkan setting akun anda!</h5>
+			<form action="/users/settings" method="post" enctype="multipart/form-data">
+				<input type="hidden" name="csrf_token"
+					value="832945475286a0e4eb3343ed522e2815" />
+				<div class="form-group mb-3">
+					<input type="text" name="apikey"
+						class="form-control pe-5 "
+						placeholder="apikey"  value="<%= apikey %>">
+										</div>
+				<div class="d-flex mt-1 justify-content-between align-items-center">
+					<div class="form-check">
+							<input type="file" name="profile" accept="image/jpg, image/png, image/jpeg"
+							class="form-control pe-5 ">
+						
+					</div>
+				</div>
+				<div class="mt-3" style="margin: 0 auto;display: table">                  </div>
+				<div class="d-grid mt-3">
+					<button type="submit" id="sumbit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>    </div>

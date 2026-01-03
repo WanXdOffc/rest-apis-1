@@ -1,0 +1,81 @@
+{
+	"name": "@api/hosei.xyz",
+	"version": "1.1.1",
+	"description": "My Rest Api Projectttttt",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Heavy Craft/restAPIs.git"
+	},
+	"keywords": [
+		"Rest",
+		"API",
+		"Private"
+	],
+	"author": "Heavy Craft ×͜×",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Heavy Craft/restAPIs/issues"
+	},
+	"dependencies": {
+		"@sasmeee/igdl": "^1.0.0",
+		"@tobyg74/tiktok-api-dl": "*",
+		"axios": "^0.21.1",
+		"bcrypt": "^5.1.1",
+		"brainly-scraper": "^1.0.3",
+		"cheerio": "^1.0.0-rc.6",
+		"cloudscraper": "^4.6.0",
+		"compression": "^1.7.4",
+		"rate-limit-mongo": "^2.3.2",
+		"connect-flash": "^0.1.1",
+		"cookie-parser": "^1.4.5",
+		"crypto": "^1.0.1",
+		"discord.js": "14.14.1",
+		"ejs": "^3.1.6",
+		"express": "^4.17.1",
+		"express-ejs-layouts": "^2.5.1",
+		"express-fileupload": "^1.2.1",
+		"express-ip": "^1.0.4",
+		"express-rate-limit": "^5.2.6",
+		"express-recaptcha": "^5.0.2",
+		"express-session": "^1.17.2",
+		"file-type": "^16.5.0",
+		"form-data": "^4.0.0",
+		"fs": "0.0.1-security",
+		"google-play-scraper": "^8.0.2",
+		"googlethis": "^1.2.6",
+		"javascript-obfuscator": "^4.0.0",
+		"jimp": "^0.16.1",
+		"jsonwebtoken": "^8.5.1",
+		"lodash": "^4.17.21",
+		"md5": "^2.3.0",
+		"memorystore": "^1.6.6",
+		"moment-timezone": "^0.5.33",
+		"mongoose": "^6.4.1",
+		"node_characterai": "^1.2.5",
+		"node-cron": "^3.0.0",
+		"node-fetch": "^3.3.2",
+		"nodemailer": "^6.6.3",
+		"passport": "^0.4.1",
+		"passport-github": "^1.1.0",
+		"passport-google-oauth20": "^2.0.0",
+		"passport-local": "^1.0.0",
+		"perf_hooks": "^0.0.1",
+		"qrcode": "^1.5.3",
+		"qs": "^6.10.1",
+		"request": "^2.88.2",
+		"response-time": "^2.3.2",
+		"serve-favicon": "^2.5.0",
+		"sharp": "^0.33.2",
+		"shortid": "^2.2.16",
+		"yt-search": "^2.10.4",
+		"ytdl-core": "^4.11.5"
+	},
+	"homepage": "https://github.com/FarhanXC7/restAPIs#readme",
+	"devDependencies": {
+		"nodemon": "^3.1.0"
+	}
+}

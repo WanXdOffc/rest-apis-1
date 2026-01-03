@@ -1,0 +1,598 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Hosei APIs</title>
+    <!-- secondary Meta Tags -->
+    <meta name="description" content="Hosei adalah sebuah Provides API yang menyediakan berbagai banyak fitur API yang bisa di gunakan untuk bot development, web development, etc." />
+    <meta name="keywords" content="Hosei APIs, Panel SMM, SMM Panel, Panel SMM Termurah, Panel SMM Indonesia, Jasa Sosial Media, Jasa Sosmed, Followers Instagram, Followers Instagram Gratis, Suntik Followers, Layanan Sosmed, Layanan Sosial Media." />
+    <meta name="author" content="Darmawan">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <link rel="canonical" href="https://hosei.xyz/" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:url" content="https://hosei.xyz/">
+    <meta property="og:title" content="Hosei APIs">
+    <meta property="og:description" content="Hosei adalah sebuah Provides API yang menyediakan berbagai banyak fitur API yang bisa di gunakan untuk bot development, web development, etc.">
+    <meta property="og:image" content="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg">
+    <meta property="og:image:secure_url" content="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="3000" />
+    <meta property="og:image:height" content="3000" />
+    <meta property="og:image:alt" content="Hosei APIs" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hosei APIs" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hosei.xyz/">
+    <meta property="twitter:title" content="Hosei APIs">
+    <meta property="twitter:description" content="Hosei adalah sebuah Provides API yang menyediakan berbagai banyak fitur API yang bisa di gunakan untuk bot development, web development, etc.">
+    <meta property="twitter:image" content="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg">
+    <meta name="google-site-verification" content="IBV-YVKl7vqtbTjvPUPT36tXamTzTQyodyciX5eIjz8" />
+
+    <!-- App favicon -->
+    <link rel="icon" href="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg" />
+    <link rel="icon" href="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg" sizes="32x32" />
+    <link rel="icon" href="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg" />
+    <meta name="msapplication-TileImage" content="https://i.ibb.co.com/KDNkssr/IMG-20240603-173706-729.jpg" />
+
+    <!-- [Font] Family -->
+    <link rel="stylesheet" href="/css/inter.css" id="main-font-link" />
+    <!-- prism css -->
+    <link rel="stylesheet" href="/css/yas.css">
+    <!-- [Tabler Icons] https://tablericons.com -->
+    <link rel="stylesheet" href="/css/icon.css" />
+    <!-- [Feather Icons] https://feathericons.com -->
+    <link rel="stylesheet" href="/css/feather.css" />
+    <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- [Material Icons] https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="/css/material.css" />
+    <!-- [Page specific CSS] start -->
+    <link rel="stylesheet" href="/css/flatpickr.min.css">
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="/css/style.css" id="main-style-link" />
+    <link rel="stylesheet" href="/css/fontawesome.css" />
+    <link rel="stylesheet" href="/css/style-preset.css" />
+    <link rel="stylesheet" href="/css/croppr.min.css" />
+    <link href="/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/landing.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal/minimal.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <!-- [Page specific CSS] start -->
+    <style>
+        /* @media (max-width: 1199px) { */
+        @media (max-width: 1199px) {
+            .page-header {
+                display: none;
+            }
+
+            .pc-container .page-header+.row {
+                padding-top: 4px;
+            }
+        }
+    </style>
+    <!-- Gradient Text Animation CSS -->
+    <style>
+        .hero-text-gradient {
+            --bg-size: 400%;
+            --color-one: rgb(244, 37, 37);
+            --color-two: rgb(31, 82, 249);
+
+            background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0 / var(--bg-size) 100%;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: move-bg 24s infinite linear;
+        }
+
+        @keyframes move-bg {
+            to {
+                background-position: var(--bg-size) 0;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        function modal_open(type, url) {
+            $('#detail_modal').modal('show');
+            if (type == 'add') {
+                $('#detail_modal_title').html('<i class="fa fa-plus"></i> Tambah Data');
+            } else if (type == 'edit') {
+                $('#detail_modal_title').html('<i class="fa fa-edit"></i> Ubah Data');
+            } else if (type == 'detail') {
+                $('#detail_modal_title').html('<i class="fas fa-search me-2"></i> Detail Data');
+            } else if (type == 'transaksi') {
+                $('#detail_modal_title').html('<i class="fe-shopping-cart"></i> Mulai Transaksi');
+            } else if (type == 'detail_layanan') {
+                $('#detail_modal_title').html('<i class="fas fa-search me-2"></i> Detail Layanan');
+            } else if (type == 'detail_pesanan') {
+                $('#detail_modal_title').html('<i class="fas fa-search me-2"></i> Detail Pesanan');
+            } else if (type == 'detail_deposit') {
+                $('#detail_modal_title').html('<i class="fas fa-search me-2"></i> Detail Deposit');
+            } else if (type == 'cancel_deposit') {
+                $('#detail_modal_title').html('<i class="fas fa-times-circle fs-6 me-2"></i> Batalkan Deposit');
+            } else {
+                $('#detail_modal_title').html(type);
+            }
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "html",
+                data: {
+                    'csrf_token': '69e6e75bbe661702c211ccad6145632b'
+                    // tambahkan parameter lain jika diperlukan
+                },
+                success: function($data) {
+                    $('#detail_modal_body').html($data);
+                },
+                error: function() {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Ups!",
+                        html: "Terjadi Kesalahan, jika masalah ini masih bHoseijut mohon hubungi Admin.",
+                        customClass: {
+                            confirmButton: 'btn btn-secondary',
+                        },
+                        buttonsStyling: false,
+                    }).then((result) => {
+                        $('#modal').modal('hide');
+                    });
+                },
+                beforeSend: function() {
+                    $('#detail_modal_body').html('<div class="progress mb-0"><div class="progress-bar progress-bar-striped active" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%" role="progressbar"></div></div>');
+                },
+            });
+        }
+
+    </script>
+
+    <!-- <style>
+        .fixed-left {
+            zoom: .85;
+            position: fixed;
+            z-index: 99;
+            top: 70%;
+            margin-top: -100px;
+            left: -10px;
+            width: 85px;
+            padding: 15px 15px 15px 20px;
+            background-color: #262626;
+            border: 1px solid #fbf4a0;
+            border-radius: 10px;
+            transition: .5s ease-in-out
+        }
+
+        @media only screen and (max-width: 600px) {
+            .fixed-left {
+                top: 57%;
+            }
+        }
+
+        .fixed-left a,
+        main {
+            display: block
+        }
+
+        .fixed-img-100,
+        .fixed-item,
+        .fixed-wa {
+            width: 100%;
+        }
+
+        .fixed-item {
+            margin-bottom: 10px;
+        }
+
+        .fixed-item .fixed-item-animated,
+        .fixed-wa .fixed-item-animated {
+            -webkit-animation: 1s ease-in-out infinite alternate;
+            animation: 1s ease-in-out infinite alternate
+        }
+
+        .fixed-arrow {
+            position: absolute;
+            right: -25px;
+            top: 10px;
+            bottom: 10px;
+            background: #fbf4a0;
+            width: 25px;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer
+        }
+
+        .vertical-align-center {
+            align-items: center
+        }
+
+        .dflex {
+            display: flex !important
+        }
+
+        .justify-content-center {
+            justify-content: center !important
+        }
+
+        .fixed-arrow img {
+            transform: rotate(270deg);
+            filter: invert(1)
+        }
+
+        .arrow {
+            height: 20px
+        }
+
+        @media (max-width:1366px) {
+            .arrow {
+                height: 15px
+            }
+        }
+
+        .fixed-left.close {
+            left: -85px
+        }
+
+        .snowflake {
+            color: #897353;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            position: fixed;
+            top: -10%;
+            z-index: 9999;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+            -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+            -webkit-animation-duration: 10s, 3s;
+            -webkit-animation-timing-function: linear, ease-in-out;
+            -webkit-animation-iteration-count: infinite, infinite;
+            -webkit-animation-play-state: running, running;
+            animation-name: snowflakes-fall, snowflakes-shake;
+            animation-duration: 10s, 3s;
+            animation-timing-function: linear, ease-in-out;
+            animation-iteration-count: infinite, infinite;
+            animation-play-state: running, running
+        }
+
+        @-webkit-keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+        @-webkit-keyframes snowflakes-shake {
+
+            0%,
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+
+            50% {
+                -webkit-transform: translateX(80px);
+                transform: translateX(80px)
+            }
+        }
+
+        @keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+        @keyframes snowflakes-shake {
+
+            0%,
+            100% {
+                transform: translateX(0)
+            }
+
+            50% {
+                transform: translateX(80px)
+            }
+        }
+
+        .snowflake:nth-of-type(0) {
+            left: 1%;
+            -webkit-animation-delay: 0s, 0s;
+            animation-delay: 0s, 0s
+        }
+
+        .snowflake:first-of-type {
+            left: 10%;
+            -webkit-animation-delay: 1s, 1s;
+            animation-delay: 1s, 1s
+        }
+
+        .snowflake:nth-of-type(2) {
+            left: 20%;
+            -webkit-animation-delay: 6s, .5s;
+            animation-delay: 6s, .5s
+        }
+
+        .snowflake:nth-of-type(3) {
+            left: 30%;
+            -webkit-animation-delay: 4s, 2s;
+            animation-delay: 4s, 2s
+        }
+
+        .snowflake:nth-of-type(4) {
+            left: 40%;
+            -webkit-animation-delay: 2s, 2s;
+            animation-delay: 2s, 2s
+        }
+
+        .snowflake:nth-of-type(5) {
+            left: 50%;
+            -webkit-animation-delay: 8s, 3s;
+            animation-delay: 8s, 3s
+        }
+
+        .snowflake:nth-of-type(6) {
+            left: 60%;
+            -webkit-animation-delay: 6s, 2s;
+            animation-delay: 6s, 2s
+        }
+
+        .snowflake:nth-of-type(7) {
+            left: 70%;
+            -webkit-animation-delay: 2.5s, 1s;
+            animation-delay: 2.5s, 1s
+        }
+
+        .snowflake:nth-of-type(8) {
+            left: 80%;
+            -webkit-animation-delay: 1s, 0s;
+            animation-delay: 1s, 0s
+        }
+
+        .snowflake:nth-of-type(9) {
+            left: 90%;
+            -webkit-animation-delay: 3s, 1.5s;
+            animation-delay: 3s, 1.5s
+        }
+
+        .snowflake:nth-of-type(10) {
+            left: 25%;
+            -webkit-animation-delay: 2s, 0s;
+            animation-delay: 2s, 0s
+        }
+
+        .snowflake:nth-of-type(11) {
+            left: 65%;
+            -webkit-animation-delay: 4s, 2.5s;
+            animation-delay: 4s, 2.5s
+        }
+    </style> -->
+    <!-- <script>
+        document.onkeydown = function(e) {
+            if (
+                (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) ||
+                (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) ||
+                (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+            ) {
+                alert('Mau ngapain sih...');
+                return false;
+            }
+        };
+    </script> -->
+
+</head>
+
+<body data-pc-theme_contrast="true" data-pc-sidebar-caption="true" data-pc-preset="preset-1" data-pc-direction="ltr" data-pc-theme="dark">
+
+
+	<%- include('msg') %>
+	<%- include('errors') %>
+		<%- body %>
+
+
+</body>
+
+    <!-- Required Js -->
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/simplebar.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom-font.js"></script>
+
+    <!-- <script src="https://herupedia.id/assets/js/config.js"></script> -->
+    <script type="text/javascript">
+        function layout_change2(value) {
+            $('#theme_mode').val(value);
+        }
+
+        function layout_sidebar_change2(value) {
+            $('#theme_contrast').val(value);
+        }
+
+        function layout_preset2(value) {
+            $('#layout').val(value);
+        }
+
+        'use strict';
+        var theme_contrast = 'true'; // [ false , true ]
+        var caption_show = 'true'; // [ false , true ]
+        var preset_theme = 'preset-1'; // [ preset-1 to preset-10 ]
+        var dark_layout = 'false'; // [ false , true , default ]
+        var rtl_layout = 'false'; // [ false , true ]
+        var box_container = 'false'; // [ false , true ]
+        var version = 'v9.0';
+    </script>
+    <script src="/js/pcoded.js"></script>
+    <script src="/js/feather.min.js"></script>
+    <script src="/js/prism.js"></script>
+    <script src="/js/croppr.min.js"></script>
+    <script src="/js/flatpickr.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).keypress(function(event) {
+            if (event.which == '13' && !$(event.target).is('textarea')) {
+                event.preventDefault();
+            }
+        });
+
+        if (dark_layout == 'default') {
+            setTimeout(() => {
+                $('.theme-layout button[data-value=default]').trigger('click');
+            }, 0);
+        }
+
+        (function($) {
+            $.fn.hasScrollBar = function() {
+                return this[0] ? this[0].scrollHeight > this.innerHeight() : false;
+            }
+        })(jQuery);
+
+        if (!$('body').hasScrollBar()) {
+            setTimeout(function() {
+                var oldStyle = $('body.swal2-height-auto').attr('style');
+                $('body.swal2-height-auto').attr('style', oldStyle + 'padding-right: 0 !important;');
+            }, 1);
+        }
+
+        if (!$('body').hasScrollBar()) {
+            setTimeout(function() {
+                var oldStyle = $('body.modal-open').attr('style');
+                $('body.modal-open').attr('style', oldStyle + 'padding-right: 0 !important;');
+            }, 1);
+        }
+
+        $(".modal").on('hide.bs.modal', function() {
+            setTimeout(function() {
+                $('.select2').select2();
+            }, 300);
+        });
+
+        $(".modal").on('shown.bs.modal', function() {
+            setTimeout(function() {
+                $(".select2").each((_i, e) => {
+                    var $e = $(e);
+                    $e.select2({
+                        dropdownParent: $e.parent()
+                    });
+                })
+            }, 200);
+        });
+
+        if (!($(".modal").data('bs.modal') || {})._isShown) {
+            document.querySelector('body').style.overflow = 'auto';
+            $('.select2').select2();
+        }
+
+        $('form').submit(function() {
+            $.blockUI({
+                message: '',
+                baseZ: 10000,
+                css: {
+                    backgroundColor: 'transparent',
+                    border: '0'
+                },
+                overlayCSS: {
+                    backgroundColor: '#fff',
+                    opacity: 0.8
+                }
+            });
+        });
+
+        var uri = window.location.toString();
+        if (uri.indexOf("#") > 0) {
+            var clean_uri = uri.substring(0, uri.indexOf("#"));
+            window.history.replaceState({}, document.title, clean_uri);
+        }
+
+        function confirm_logout() {
+            Swal.fire({
+                title: 'Yakin ingin keluar?',
+                icon: 'question',
+                html: 'Semua sesi Anda yang tersimpan akan dihapus.',
+                showCancelButton: true,
+                confirmButtonText: 'Keluar',
+                cancelButtonText: 'Batal',
+                customClass: {
+                    confirmButton: 'btn btn-secondary',
+                    cancelButton: 'btn btn-secondary',
+                },
+                buttonsStyling: false,
+                allowOutsideClick: false,
+                allowEscapeKey: false
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "https://herupedia.id/auth/logout";
+                }
+            });
+        }
+
+        function copy_text(title, text) {
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.setAttribute("id", "dummy_id");
+            document.getElementById("dummy_id").value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+            Swal.fire({
+                title: 'Yeay!',
+                icon: 'success',
+                html: title + ' berhasil disalin.',
+                confirmButtonText: 'Okay',
+                customClass: {
+                    confirmButton: 'btn btn-secondary',
+                },
+                buttonsStyling: false,
+            });
+        }
+
+        function detail_service(id) {
+            $('#detail_modal_title').html('<i class="fas fa-search me-2"></i>Detail Layanan #' + id);
+            $('#detail_modal').modal('show');
+
+            $.ajax({
+                type: "GET",
+                url: "https://herupedia.id/page/detail_service/" + id,
+                data: {
+                    'csrf_token': '69e6e75bbe661702c211ccad6145632b'
+                },
+                dataType: "html",
+                success: function(data) {
+                    $('#detail_modal_body').html(data);
+                },
+                error: function() {
+                    $('#ajax-result').html('<font color="red">Terjadi kesalahan, jika masalah ini masih bHoseijut mohon hubungi Admin.</font>');
+                },
+                beforeSend: function() {
+                    $('#detail_modal_body').html('<div class="progress mb-0"><div class="progress-bar progress-bar-striped active" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%" role="progressbar"></div></div>');
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select2').select2();
+        });
+    </script>
+</body>
+
+</html>
